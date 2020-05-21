@@ -1,0 +1,8 @@
+wheel
+
+Django~=3.0.6
+
+django-environ~=0.4.5
+djangorestframework~=3.11.0
+
+requests~=2.23
