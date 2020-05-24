@@ -80,3 +80,8 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.JSONParser',
     ],
 }
+
+# Application config
+
+BRAINTREE_API_KEY = env('BRAINTREE_API_KEY')
+BRAINTREE_API_URL = env('BRAINTREE_API_URL')
