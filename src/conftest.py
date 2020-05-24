@@ -2,6 +2,7 @@ import random
 import string
 
 import pytest
+from rest_framework.test import APIClient
 
 
 @pytest.fixture
@@ -11,3 +12,8 @@ def make_random_str():
         return ''.join(random.choice(letters) for i in range(length))
 
     return _make_random_str
+
+
+@pytest.fixture
+def api():
+    return APIClient()
