@@ -23,6 +23,8 @@ ALLOWED_HOSTS = ['*']  # host validation is not necessary
 
 INSTALLED_APPS = [
     'rest_framework',
+
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +62,10 @@ LOGGING = {
         'django.request': {
             'handlers': ['console'],
             'level': 'DEBUG',
+        },
+        'payments': {
+            'handlers': ['console'],
+            'level': 'INFO',
         },
     },
 }
