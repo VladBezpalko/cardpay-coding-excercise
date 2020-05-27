@@ -1,0 +1,2 @@
+django_debug: off
+django_braintree_api_url: https://payments.sandbox.braintree-api.com/graphql

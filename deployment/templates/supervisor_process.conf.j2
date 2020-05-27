@@ -1,0 +1,8 @@
+[program:app]
+command={{ venv_path }}/bin/gunicorn -c {{ project_dir }}/gunicorn_conf.py app.wsgi:application
+directory={{ project_dir }}/src
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/supervisor/app-out.log
+redirect_stderr=true
+user=root
