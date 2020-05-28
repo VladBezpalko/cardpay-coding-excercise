@@ -8,6 +8,8 @@ card payment information and perform a sale using the generated token.
 
 It literally consists of two endpoints - `/tokenise` and `/sale`, both supports only POST method. 
 Don't be scared by "Not Found" instead of home page. Both actions backed by Braintree.
+Note that Braintree sandbox environment only accepts 
+[specific test credit card numbers](https://developers.braintreepayments.com/reference/general/testing/python#credit-card-numbers).
 
 ## Project structure
 
@@ -57,8 +59,7 @@ $ ./manage.py runserver
 
 You should have `ansible` installed on the local machine.    
 Ansible Vault is used to encrypt default credentials (stored in `secrets.yml`),
-so you must know the Vault password by which they were encrypted in order to run playbook. 
-Non secret variables stored in `vars.yml`.
+so to run playbook you must know the Vault password by which they were encrypted. 
 
 Defined `playbook.yml` very primitive and built just to get things done, so don't judge :)
 
